@@ -319,24 +319,7 @@ document.querySelectorAll('.project-card').forEach(card => {
     });
 });
 
-// Typing effect for hero subtitle (optional enhancement)
-const subtitle = document.querySelector('.hero-subtitle');
-if (subtitle) {
-    const text = subtitle.textContent;
-    subtitle.textContent = '';
-    let i = 0;
-
-    function typeWriter() {
-        if (i < text.length) {
-            subtitle.textContent += text.charAt(i);
-            i++;
-            setTimeout(typeWriter, 100);
-        }
-    }
-
-    // Start typing effect after a short delay
-    setTimeout(typeWriter, 500);
-}
+// Typing effect handled below in TYPING ANIMATION FOR HERO SUBTITLE section
 
 // Dynamic year in footer
 const footer = document.querySelector('.footer p');
@@ -457,7 +440,7 @@ window.addEventListener('scroll', () => {
 // TYPING ANIMATION FOR HERO SUBTITLE
 // ===================================
 const heroSubtitle = document.querySelector('.hero-subtitle');
-const subtitleText = 'Software Engineer & ML Enthusiast';
+const subtitleText = 'AI & ML Engineer | Building Intelligent Systems';
 let charIndex = 0;
 
 function typeText() {
